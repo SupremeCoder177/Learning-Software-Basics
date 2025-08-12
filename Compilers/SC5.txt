@@ -1,0 +1,80 @@
+Chapter SC5
+
+Let's try to make a compiler for a new language.
+
+So what do we need? Well as for any language the humans speak, we need grammer, or in this case, syntax.
+Syntax is the grammer of programming languages. If you have ever tried coding and got an error saying SyntaxError, it is equivalent to your
+linguistics professor scolding you for using wrong grammer while speaking.
+
+In this case, you are trying to speak to the computer, and the teacher is the compiler. But who taught the teacher this grammer in the first place,
+that is to say, who decided that in a simple sentence like "An apple falls from a tree", the object is the apple, and falls is a verb. And what is an object
+and a verb in the first place?
+
+To make a computer language you have to answer all these questions.
+
+In most coding languages when you want to declare a variable, the syntax looks like this
+
+data_type variable_name = value;
+
+Now data_types are different ways of reading and interpreting binary data.
+Like for example let me give you a binary number say 11000010, this is 1 byte of data. (1 byte = 8 bits)
+
+Now tell me what it says in the human language.
+If you think long enough you will realize there are potentially infinite number of ways this singular piece of data can be interpreted.
+So to make sure you and everyone else in line after you, interpret this data in the same way, we establish some rules and procedures.
+
+Like Step 1, convert 1 byte of data from binary to decimal
+	     11000010 in decimal = 194
+
+Now what does 149 mean? Well let's establish some rules then.
+
+Each alphabet in the english language will be represented by a number.
+So A = 1, B = 2 and so on. 
+So 149 = AID, and AID means to help. 
+
+So say someone sent you a message in the form of binary 
+and you both knew the steps and procedures to translate that data into something humans can understand, in this way you can 
+communicate to each other, like in this case someone is asking for help. 
+
+Now you might say, well why go through the hassle of trying to send binary or read binary data, just send or store data in form
+of well numbers, sorry to disappoint, binary is the only way of storing and sending data, apart from the way you brain stores data, but we don't know much about that right now.
+
+So you agreed on some rules and procedures to turn a non-understandble piece of data into something you can understand, compilers do the exact opposite as we have seen before.
+
+So to make your own compiler you first needs to define the rules and procedures of turning one type of data into another type.
+Basically the rules and procedures to convert
+
+Code ---> Assembly ----> Binary
+
+Each step needs to be defined, sometimes you don't even need to define how to convert assembly to binary, the BIOS (Basic Input Output System)
+sometimes comes with a way to do that for you, so really you just need to transform code into assembly.
+
+Like say you define some rules like so :-
+
+int x = 10; 
+
+#RULE1 Every sentence must end in a ';' or give an error (scolding) to the user
+#RULE2 Every variable must have its data type before its name, if there is no data type mentioned give an error (scolding)
+#RULE3 All variables with the data type of int (integers) can only store integer values, if they try to store anything else give the user an error (scolding)
+#RULE4 The data_type information will be stored starting from the memory address of the first bit of the previous byte of the memory address of the variable itself
+
+#PROCEDURE1 To turn the data of an int type variable from binary to human readable form, convert binary to decimal
+#PROCEDURE2 To turn the data of an int type variable from readable form to binary, convert the decimal to binary
+
+#DEFINITION1 Integers values are binary data that start with four 1's
+#DEFINITION2 Floating values are binary data that start with three 1's
+#DEFINITION3 String values are binary data that start with 2 1's
+#DEFINITION4 Negative numbers, whether integer or floating will end with 1001
+#DEFINITION5 Positive numbers, whether integer or floating will end with 0000
+
+And now you write some procedures to convert this code into assembly, the details are bit more techinal so I will skip them for now.
+But the main this is that now you have the startings of a new coding language. (Though most languages have the rules and procedures we described just now)
+
+And voila that's the oversimplified way of trying to make a compiler from scratch, or in other words making a new programming language.
+
+
+But this was just an example to show you how you could potentially make a compiler yourself, how actual real life compilers for languages like C/C++ function are much more than just this.
+They use things like Preprocessing and Linking which I have not yet told you about yet.
+
+
+	

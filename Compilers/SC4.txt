@@ -1,0 +1,40 @@
+Chapter SC4
+
+Ok so now on the main topic, how in the heck are compilers even made?
+
+Ok wanna hear something mind blowing, the compilers are software as we know, but the really weird thing about them is that...
+Say for example the C++ compiler, most people know that the C++ compilers like g++, clang etc are written in C++.
+
+But wait a second, the compilers which compile the language into binary are written in the language they compile itself?
+How is that even possible?
+
+Because if you think about it, to make those compilers, you need to first write the code for them, and then.... compile it.
+But how can you compile the code if you don't have a compiler, the code you want to compile is the compiler itself, but since the code is not compiled, that means as of right now
+there is no compiler.
+
+It's like asking the question of what came first, the chicken or the egg? It makes no sense to say the egg came first, because you need a chicken for it and vice-versa.
+
+The answer is that, we use a process called bootstrapping. This is the core of all software, the absolute start of programming.
+Before compilers existed, if you remember from SB1, people used punch cards, which were basically binary instructions.
+
+And if you have been paying attention for the last few chapters, you would know by now that all compilers do is convert the code we write into binary for the cpu, but since people at the time
+were already writing in binary, compilers weren't needed at all. The need for compilers arose because :-
+
+(i) Writing in binary is slow, inefficient, and hard
+(ii) Punch cards were hard to make, store, and arrange
+
+All in all, consider binary coding as using spears and bows in a war fought with space ships and laser guns. It was completely out of the question that coding could continue like this.
+So the first compiler was created.
+
+How? Well they coded it in binary of course, since there was literally no other language to write it in. (Because you need a compiler for a language)
+So the first compiler was made by literally coding the binary in the transistors by hand.
+
+After that, you could use that compiler to compile a program, which program you may ask? It was another compiler. Yup once the original compiler was made
+all that was left was to use that primitive compiler to compile a new compiler, and then so on.
+
+This process of using primitive tools to make more advanced tools is called bootstrapping, this is the basis of all technology, not just software.
+Everything you see today are tools made from primitive tools over centuries of refinement.
+
+And thus the wheel of technology began spinning and has never stopped since........... (damn I should be a movie director)
+
+But in all seriousness compilers are so complicated to make, yet the concept behind them is very easy.

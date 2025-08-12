@@ -1,0 +1,24 @@
+Chapter SC1
+
+So you want to learn about compilers? Don't worry ma boi I got u. (ok enough bad english)
+
+Look I am not going over the basics again, so if you want to learn the basics then refer to SB3, ok now you're back from SB3. Let's begin.
+
+Compilers work in different ways, for example, some convert code directly to binary, while some well take a couple extra steps. This all begins from the way processors are built (I know, more hardware stuff, damn I need a break).
+Ok so as you might know, at the current time of me writing this, there are 2 major companies which make processors, Intel and AMD, well I guess Apple does too, but hey I don't like Apple.
+
+Ok so even though processors do the same thing, they are made differently, which increases or decreases their speed of execution, now that is not important, the important thing is that each processors family, like
+AMD Ryzen or Intel Series have a very specific structure of their Registers, ALU, CU etc (see HB6). So in short none of them are the same.
+
+Now here is a mind blowing thing, all coding languages are fake, yup you heard it correct, each and every single one of them are fake and slow and inefficient because the one true language which actually translates into
+intructions that the processors can read and understand is Assembly or asm. (not asmr you stupid fu*k)                    
+
+Now here is the deal, there are two kinds of languages compiled and interpreted, and don't worry the only difference between the two is this.........
+
+Compiled languages are compiled, and interpreted languages are interpreted. (MIND BLOWN EMOJI) 
+
+No but seriously though, that's all there is to it. And the reason they are different is beacause their compilers are different.
+
+
+
+P.S. - Hello, this is me from 2 days after writing this stuff. I know this might feel overwhelming but don't worry the next chapters are all dedicated to explining this one.

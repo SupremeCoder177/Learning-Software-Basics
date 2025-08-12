@@ -1,0 +1,101 @@
+Chapter SC3
+
+All about compiled languages.
+
+Well since you now know what a compiler does, I need to tell you something heart-breaking, I lied. I know right, you're devastated right now. 
+But don't worry I lied only partially, technically the concept is the same.
+
+Now the concept I explanied in the previous chapter about how compilers compile to assembly, then assembly is compiled to binary. 
+Is 100% true to these type of languages, like C++, Rust etc. 
+
+It's with the interpreted languges that the trouble begins, at least for me. (Because I have to understand them first myself to teach you)
+Ok here is the deal with interpreted languages, they solve the age old coding problem "it runs on my machine". 
+
+We coders like to code without thinking about whether or not our code will run on other devices, as I just mentioned each processor has a different assembly, and so each has a different 
+assembler, and hence you need a different compiler for each one. Which makes it a pain for distributing the thing you made. Say you made an app and compiled it and run it on your windows machine,
+but when you give the copy of your app to your friend who uses an apple macbook series laptop, it doens't work. 
+
+You need to install a Mac compiler which will compile your code into a binary code which can be run in Mac books. Ok technically not that hard, but kind of annoying, and the fact that you need
+to compile everytime you need to run it makes it extremely slow. For example say you wrote version 1.0 of your app and then compiled it for every system, windwos, mac and linux, each processors etc.
+
+Now you decide to write some changes to your souce code (See refrence SC3), and you make a version 1.1. Now since the changes you made are not in the compiled file you made for version 1.0, that means
+you need to compile everything again for each system then distribute it to everyone using your app. Pretty tough for big companies with billions of users.
+
+Interpreted languages makes it easy, to make changes to source code and then reflect them in your application very easily. But how does it do so?
+
+Let me explain using this example from SC2 :-
+
+
+For Compiled Languages
+
+	Your code   			  Assembly Equivalent			           Binary
+print_to_console(1 + 1)   ------->      mov eax, 1;  add eax, 1; -------->   010001010101001010011010010101001010
+			 (Compiler)	                        (assembler) 
+
+
+
+For Interpreted Languages
+
+	Your code   			  Bytecode Equivalent			           Binary
+print_to_console(1 + 1)   ------->      LOAD_GLOBLA 1; LOAD_CONST 1; -------->   0101010010101000100100101010101001010
+			 (Compiler)	                               VM 
+ 								(Virtual Machine) 
+
+
+
+The only difference is that compilers for interpreted languages compile not into assembly but into something called bytecode. Now why does this matter? To begin with it solves the
+problem mentioned above. You see in compiled languages the compiler compiles to assembly, and then straight to binary. But in this scenario, the compiler compiles to bytecode which is different than 
+assembly, because unlike assembly which is different for each system, bytecode is the same for each system.
+
+md
+Like,
+
+      						          (System 1)        (assembler)           
+   					            ----> mov eax "hello";  ------------> 	0101010101010100010101
+                                                   /
+(Compiled Language)		       (compiler) /
+C++ code:            printf("Hello"); ------------      Assembly Equivalent (differnet)      Binary Format (different for each system)
+				                  \
+  					           \                         
+        				            -----> put "hello" 1;  ------------->     0100101100101010101111000
+                                                          (System 2)        (assembler)        
+                                                       
+
+
+
+      						          (System 1)       (Virtual Machine)           
+   					            ----> LOAD "hello" 1;  ------------> 	0101010101010100010101
+                                                   /
+(Interpreted Language)		       (compiler) /
+Python code:         printf("Hello"); ------------      Bytecode Equivalent (same)           Binary Format (different for each system)
+				                  \
+  					           \                         
+        				            -----> LOAD "hello" 1;  ------------->      0001010101001101000011
+                                                          (System 2)       (Virtual Machine)           
+
+
+
+
+
+So I guess you understand it now, the virtual machine is like the second compiler. When you compile an interpreted language it compiles to bytecode, which is faster than compiling to assembly.
+Now since bytecode is always the same for the given code, that means if you have the VM (Virtual Machine) needed to transform bytecode to binary installed on your system, you can just compile bytecode into
+binary when you need to run the program, and hence you can run the same bytecode in each system without recompiling again and again.
+
+But since compiles languages are compiled to binary from the get-go or Ahead-Of-Time (AOT), and binary is the ultimate thing the processor needs, so these languages are generally much faster
+than interpreted languages, I mean man you can't have everything.
+
+On the other hand, interpreted languages use a special system where when the program is executed, it is run line by line, and each line is compiled into binary for execution. So that means it doesn't need to compile
+the whole bytecode to run the program, only the part that is currently in use compiles, making interpreted languages have faster run-time (see reference notes SC3). This process of compiling single line of bytecode
+only when they need to be executed is called Just-In-Time (JIT) compilation. 
+
+Just-In-Time in this case refers to the fast it compiles only when needed.
+
+Again this is way too oversimplification, and I haven't even begun to tell you how compilers are made. But these are the two types of compilers and compiling methods (AOT and JIT) explained.
+
+
+
+
+
+
+
+

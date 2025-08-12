@@ -1,0 +1,55 @@
+Chapter SC2
+
+What is assembly?
+
+Well its a language. (To put in simple terms).
+
+But the difference between it and the rest of the languages is that, well first of all it is different for each CPU, that means the assembly language syntax for say an i9-7800k processor is different
+than one for a M1 apple processors or a AMD Ryzen 5 processor. The reason being, it the lowest-level human-readable language for programming, now what do I mean by that?
+
+
+How can a language be low-level?
+
+Languages like Python, C++ are considered high-level because you code in english in them. And english, humans can read very easily. We humans consider ourselves above computers, because after all
+we made them. So any language which is easy to read is considered high-level. Assembly on the other hand, though written in english, is incredibly hard to comprehend and code in. Even though technically its the only
+language processors understand. 
+
+But there is a twist, even assembly is not the lowest, because the lowest is binary of course. It is the ultimate thing which computers are run on, they don't understand words, I mean how can you even feed words to a processors?
+Think about it, I mean how can you feed a silicion processor words, and make is comprehend it? The only thing you can feed a processor are electric currents. And electric currents only have 2 types, their presence or absence. 
+Which corresponds to a binary 1 and a binary 0.
+
+So in reality all languages are fake, and to code you can just type in 1s and 0s and save the file as a .exe and run it, and who knows it might work. But then why don't we do this?
+Well because that's what we used to do, remember the punch cards, that were a form of coding in binary, even though you can type 1 and 0 faster than you can punch holes in a punch card, it is still very 
+primitive, inefficient and extremely hard to do. So we instead make languages to do this for us.
+
+
+But how does it happen in real time?
+
+Well I am glad you asked, because here is an example of what a compiler does :-
+
+	Your code   			  Assembly Equivalent			           Binary
+print_to_console(1 + 1)   ------->      mov eax, 1;  add eax, 1; -------->   010001010101001010011010010101001010
+			 (Compiler)	                        (assembler) 
+
+Now what does an assembler means, I will explain later. But did you notice that for each step in the above process of converting your code to binary, it got harder and harder
+to read. You can probably understand what the code written by you means, but what the hell does the assembly one means? And binary just looks pure random gibberish.
+
+This is exactly the reason why languages were made. The first humand readable language was Fortran, the second one was LISP, and so on. It makes coding easier not having to write
+binary, but here is the thing. Remember I said assembly is different for each processor, the exmaple above only works for a specific processors, because those names like eax, they represent
+registers in the CPU and if you read HB6, you know registers are the places where the CPU stores data for processing, and since each company makes processors differently, the registers names are different
+too, not only that, the OS you are using affects the syntax too, you can be using windows, mac or linux and for each one the syxtax will be different slightly, even for the same processor.
+
+And you might be saying "Hey that's not too big, I can learn assembly and not code in those fake languages." Well my guy the example I gave is for demonstration only. See refrence notes about how the actualy
+assembly code would be like for that single line of code.
+
+Anyways, so the bottom line is, binary is the end-goal and assembly is the step in between. Languages are translated by compilers into assembly, and as you would've guessed by now, the assembler translated the
+assembly code into pure binary. Now the assembler is built in the OS (Operating System, like windows) you're using.
+
+Well you might ask "Why not skip the assembly middleman and translate our code straight to binary ?", and to be honest with you I don't have a good answer to that.
+
+See you in SC3.
+
+
+
+
+
