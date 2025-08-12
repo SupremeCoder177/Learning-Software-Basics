@@ -1,0 +1,33 @@
+Chapter SB5
+
+Now let's talk about something which I didn't mention in the previous chapter, AI. (Well because I kind of need a dedicated chapter for it)
+
+First of all let me make something clear, 
+I am not sure why you are reading this, maybe you found these folders and just got curious, or maybe you are looking to get into the computer engineering field, no matter the reason
+I have to tell you now, so you can decide whether you want to continue or not.
+
+AI is going to replace all jobs, and I am not talking about only computer jobs. Right now at the time of writing this, AI is all the hype and though most of the jobs are still performed by humans
+the number of jobs taken over by AI are increasing. Neither I am trying to sound like a conpiracy theorist, nor I wish for this to happen. But the sad reality of this world is that humans are not perfect,
+we are in fact so flawed, it surprises me how did we make it this far. AI on the other hand is the book definition of perfection, the ultimate being.
+
+Its only a matter of time before we are overthrown by AI, now that doesn't necessarily means that they will kill us all or make us slaves. This is not a movie, reality is often quite boring
+and I am sure that if all jobs are taken over by AI, maybe all we would need to do is just sit on out butts and let AI serve us from birth to death (quite equally horrible in my eyes).
+Again I am not sure of anything, no one can predict what will happen.
+
+But that was the harsh reality I had to tell you.
+
+Now if you are still willing to continue then let's go, let me teach you about AI real quick ma boi.
+
+What even is AI? 
+How is it made? 
+How can it think? 
+
+These three questions I intend to answer in the AI folder, the first one we can answer right now.
+
+AI is just code which can simulate intelligence like that of a human and recreate the thinking process of our brain. When we say AI can think, we are in fact correct, AI does think.
+But to say it is conscious, I am not sure about that one. The whole idea to make AI was inspired by our brain and how it functions. AI is a very sorry and pathetic attempt to mimic the marvels of our brain.
+That's all an AI is, a artifically made, low-level brain. The reason it can think billions of times faster than humans, is because it quite literally thinks using more than 1 mind.
+
+Ok I made AI sound a lot cooler than it really is, underneath the layers of magic which makes AI think, is just maths. Nothing more.
+
+

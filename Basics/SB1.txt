@@ -1,0 +1,17 @@
+Chater SB1
+
+Welcome to this journey inside the things you see on your screen (apps).
+
+Well this is mostly going to be about history of software. When the first computers were made, they were well in the most basic sense just really large calculators.
+Which performed calculation way faster than humans making them fit for things like encryption decoding. Well even then too you had software or at least
+software which you can touch ( I am talking about punch cards )
+
+
+Punch cards were the first way of feeding instructions into a computer to tell it what to do, and well it was painfully slow process, when I say cards I do in fact means
+paper, you represented binary on them using holes, a presence of a hole represented a 1 and an absence of a hole represented a binary 0.
+One card used to represent a single line of code which was about 80 bytes. It was a painful process, to make sure that the execution of the program followed a procedure they had to pile those
+punch cards on stacks and feed them into the machine for reading. Now don't ask me how they read it (pls I am sick of hardware by now).
+
+Anyways, so that was the first kind of software, man I can't imagine making a modern app using punch cards. Well that's a good idea for a video, too bad I am not going to do it.
+The main thing I am trying to tell you is that be thankful, you might not be able to imagine how did we go from that to this (neither can I), but just be thankful. It was over decaded of slow process
+using not so good tools to make slightly better tools and doing so over and over again that we were able to make computer you see today.

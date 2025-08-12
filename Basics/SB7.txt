@@ -1,0 +1,53 @@
+Chapter SB7
+
+Whenever you run a program it first gets loaded from your storage like Hard Drive (HDD) or Solid State Drive (SDD) into your Random Access Memory (RAM)
+and this is where memory management begins. And before you ask, yes all of this is handled by ths Operating System (OS) you are using.
+
+So basically data flows like this
+
+Storage ----> RAM
+
+But what happens to the data once it enters RAM? Well the data loaded contains, the instructions or code which is for the CPU to execute.
+And when the CPU executes these intructions more data is loaded accordingly.
+
+Like say there is a line of code saying, open("filename.txt"), so now a file will be loaded in from storage to the RAM, sometimes things which will be needed to execute the
+instructions like this file, in this instance, will already be loaded to reduce loading time. But it depends.
+
+The OS assigns memory blocks for programs, like so :--
+
+
+RAM Inernal Structure
+________________________________________________________________________________
+|	Your Program	|Program A      |Program B 	|Rest of RAM		|
+|			|		|		|			|
+|			|		|		|			|
+|			|		|		|			|
+|			|		|		|			|
+|_______________________|_______________|_______________|_______________________|
+	Memory Block 1      Block 2          Block 3        
+
+Let's Focus on a single Memory Block :--
+
+
+Memory Block Internal Structure
+
+		_________________
+		|  Code		|
+		| (Instructions)| ---------> Stores the binary instructions to be executed by the CPU
+		|_______________|
+		| Static/Global |
+		|  Variables	| ---------> Stores the global variables declared in the code 
+		|_______________|
+		|		|
+		| Stack		| ---------> Stores Local Variables (Limited)
+		|_______________|
+		|		|
+		|		| ---------> Serves as extra memory for program if needed, limited to some extent, but for all general purposes kind of infinite.
+		| Heap		|
+		|		|
+		|		|
+		|_______________|
+
+
+Let's talk about each section of this memory block one by one in consecutive chapters.
+Next Chapter Code Block

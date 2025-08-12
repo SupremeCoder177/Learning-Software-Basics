@@ -1,0 +1,178 @@
+Chapter SB9
+
+Stack Memory Section
+
+This is where all the things live. In your code of course.
+Now what do I mean by that?
+
+Every line of code you write is called an instruction,
+and each instruction does something.
+
+Now what exactly this 'something' is, is what lives in the stack.
+Like for example,
+
+x = 10
+
+this line is an instruction to the CPU, let me translate what it means to the CPU.
+"Create space for an integer type variable in the Stack memory space, and store the value of 10 in it".
+
+ok what about things like:
+
+function() (this means we are executing a function)
+
+this translates to - "Make a stack-frame in the stack for a function"
+
+A stack-frame is a memory block inside Stack assigned to a function.
+
+And that's about it actually.
+The stack stores function stack-frames, and local variables.
+
+Basically each variable belongs to a function or class,
+and each function and class get assigned a memory space in Stack, these spaces are called Stack-frames
+and inside each stack-frame lives the variables the function uses.
+
+
+Like say we have two functions,
+
+(int = integer)
+
+function add(int x, int y):
+	int z = x + y
+	return z
+
+function subtract(int x, int y):
+	int z = x - y
+	return z
+
+And now a main function (See SCo5), calls these two functions like so.
+
+function main():
+	int a = 10
+	int b = 5
+	int c = add(a, b)
+	int d = subtract(a, b)
+	****program ends****
+
+
+Now let's see what happens when we run this program line-by-line, inside the stack memory.
+
+first line1: function main()
+
+Stack Memory Section Representation
+_______________________________________________________________________________________________
+|main	|										      |
+|	|	Empty									      |
+|	|										      |
+|	|										      |
+|       |                                                                                     |
+|_______|_____________________________________________________________________________________|
+  ↑
+main function stack frame gets assigned    
+
+next line: int a = 10
+_______________________________________________________________________________________________
+|main	|										      |
+|	|	Empty									      |
+|a = 10	|										      |
+|	|										      |
+|       |                                                                                     |
+|_______|_____________________________________________________________________________________|
+   ↑
+inside stack-frame of main, an integer of value 10 gets assigned somewhere, i.e. we don't know where but the computer does.
+
+and like so the next line: int b = 5, an integer of value get assigned inside the main function stack-frame.
+_______________________________________________________________________________________________
+|main	|										      |
+|	|	Empty									      |
+|a = 10	|										      |
+|b = 5	|										      |
+|	|									              |
+|       |                                                                                     |
+|_______|_____________________________________________________________________________________|
+
+next line: int c = add(a, b)
+_______________________________________________________________________________________________
+|main	|add		|								      |
+|	|		|	Empty						              |
+|a = 10	|int x = 10 	|								      |
+|b = 5	|int y = 5	|								      |
+|c = ?  |  		|                                                                     |
+|	|		|							              |
+|_______|_______________|_____________________________________________________________________|
+		↑
+	a new stack-frame gets assigned for the function add, and
+	two variables are set from the input the function recieved.
+	
+next line (now inside add function): int z = x + y
+
+_______________________________________________________________________________________________
+|main	|add		|								      |
+|	|		|	Empty						              |
+|a = 10	|int x = 10 	|								      |
+|b = 5	|int y = 5	|								      |
+|c = ?  |int z = 15  	|                                                                     |
+|	|		|							              |
+|_______|_______________|_____________________________________________________________________|
+the CPU calculates x + y and assigns them to a variable inside the stack-frame of add
+
+next line: return z
+_______________________________________________________________________________________________
+|main	|										      |
+|	|	Empty									      |
+|a = 10	|										      |
+|b = 5	|										      |
+|c = 15 |                                                                                     |
+|	|									              |
+|_______|_____________________________________________________________________________________|
+  ↑
+after returning the value of z, add function ends, and so the stack-frame for add is cleared and the value of 15 is assigned to c
+
+next line: d = subtract(a, b)
+_______________________________________________________________________________________________
+|main	|subtract	|								      |
+|	|		|	Empty						              |
+|a = 10	|int x = 10 	|								      |
+|b = 5	|int y = 5	|								      |
+|c = 15 |  		|                                                                     |
+|d = ?	|		|								      |
+|_______|_______________|_____________________________________________________________________|
+		↑
+	a new stack-frame gets assigned for the function subtract, and
+	two variables are set from the input the function recieved.
+	
+next line (now inside subtract function): int z = x - y
+_______________________________________________________________________________________________
+|main	|add		|								      |
+|	|		|	Empty						              |
+|a = 10	|int x = 10 	|								      |
+|b = 5	|int y = 5	|								      |
+|c = 15 |int z = 5  	|                                                                     |
+|d = ?	|		|							              |
+|_______|_______________|_____________________________________________________________________|
+the CPU calculates x - y and assigns them to a variable inside the stack-frame of add
+
+next line: return z
+_______________________________________________________________________________________________
+|main	|										      |
+|	|			Empty						              |
+|a = 10	|										      |
+|b = 5	|										      |
+|c = 15 |  		                                                                      |
+|d = 5	|		 							              |
+|_______|_____________________________________________________________________________________|
+the CPU assigns the value of 5 to d
+
+And then the program ends. This is how the Stack Memory works step by step as the CPU reads your code.
+And since each function gets assigned their own stack-frame, variables can have the same name inside different functions.
+
+Because they are local variables (See SCo5).
+
+If a function is called inside another function, a new stack-frame is added and so on... but of course there is a limit.
+When Stack runs out of memory an error called StackOverFlowError occurs, it usually happens when functions are called recusively (See SCo6)
+
+
+Next Heap Memory Section. 
+
+
+
+

@@ -1,0 +1,37 @@
+Chapter SB3
+
+This is all about compiler basics. Look this topic can go 2 ways, either you get really interested in it and want to learn everthing about these things, or you do what everyone else do (including me)
+you read about the basics then you forget about the details and just use them. And so if you want the juicy details go see sub-section about Compilers and if they bore you then you can skip it, there is 
+literally zero effect on your understanding about coding if you skip the detailed portion. That being said, knowing too much isn't always a bad thing, but whatever you do, don't skip this lesson.
+
+Anyways let's move on.......
+
+So a compiler as I said before is like a black-box, everything about it is like mystery for most people, I don't know much about it either. The way I see them is like translators, you know how
+on T.V. when there is a major political event going on like the leaders of nations gathering for a meeting or some shit, and besides them there is a translator or they have a headset on to translate
+what everyone else is saying to them, compilers work the same.
+
+In this instance you (the coder) wants to communicate to the hardware (computer), because sure coding is all about looking at a screen and typing words all day (not really), but of course its the
+hardware which actually gets the job done. Like say for whatever reason you want to make an app where when the user presses on a button an image for a scary monster pops up and a loud sound is played, like a jumpscare.
+Well to do that let's say you write some code like
+
+
+if(button.on_clicked()){
+	Render.disply_image("scary_img.jpg", FULL_SCREEN_MODE);
+	Sound.play("scary_music.wmv", loops=1);
+}
+
+Now don't worry, I too have no idea what I just wrote, but the main thing is this code is like how you would impletment the jumpscare mechanic into the app.
+So ok now your app is done, you now you hit run, here is what happens, the compiler for the language is called and told to read your code line by line, each line
+is converted to its binary equivalent and then that new binary file is stored on your disk mostly as an .exe, as soon as you double-click on it, the processors runs the file and there you
+have it, your very original app.
+
+
+Ok anyways, here is the breakdown, compiler is a software which reads your code, that's it.
+When you go to download "a language" you're really just downloading the compiler, see each compiler only works on the language it was built to compile, like a python compiler
+won't work for Java, and vice-versa. How does it know that the file you are feeding it is a python file? Well that's where extensions come in, each language has its own extension, like python has .py, C++ has .cpp
+java has .java and so on. 
+
+See chapter SC3 for different types of compilers and compilation methods, but even if you don't then this chapter perfectly describes a compiler in the basic sense. And you probably don't need to know more
+unless you want to make your own language, work on compilers, or are just curious.
+
+Next, the different types of software.

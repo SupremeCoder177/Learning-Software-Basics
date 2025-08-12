@@ -1,0 +1,100 @@
+Chapter SB6
+
+API (Application Programming Interface)
+
+What in the heck are they?
+
+Personally I like to call them the compilers of HTTP requests.
+But that is a very far-fetched and only understood by myself type of analogy, so ignore what I said.
+
+Let's say you make a website, youtube.
+
+So as we learned in previous chapters, you need to design a UI (User Interface) and a backend.
+Backend is the part of your website which stores all your data and handles it.
+
+Now let's reflect on that last sentence... "Backend is the part of your website which stores all your data and 'handles' it"
+What does "handling" mean in this context?
+
+Data is just data, how does one handle it?
+It isn't a toddler you need to handle, or an old person in a nursing home.
+
+Well I guess the correct terminology would have been, "provides access to"
+So the better version of that definition of a backend would be "Backend is the part of your website which stores all your data and provides access to it"
+
+Now what does access mean here?
+It means you can do a couple of things
+(i) Request Data
+(ii) Delete Data
+(iii) Add new Data
+(iv) Update Existing Data
+
+These are the four things you can do to data, and the thing that helps you do these four things is called an API.
+In more technical terms, when you want to talk to another app, you use an API to do so.
+
+The UI is an App, but the backend is an App as well, the difference is that one the user sees and uses, vs the other
+is the one that the Frontend uses.
+
+In our example of making a website like youtube, when you click on a video you send a request, this request is called an HTTP request,
+but to where you might ask, well to the backend of course.
+
+The backend recieves this request and then access something called a database to retrieve the data you requested, and then send back a response to the frontend,
+when this response comes to the UI, it renders the video on your screen.
+
+So this is what happens when you click on a video:
+
+
+
+	  Request             
+FrontEnd ---------> Backend    			Step 1
+	     (Processes Request)
+
+	Processed Request
+Backend -----------------> Database		Step 2
+			(Reads Request)
+
+	     Data
+Database -------------> Backend			Step 3
+		    (Processes Data)
+
+	  Response
+Backend -------------> Frontend			Step 4
+		   (Renders Video)
+
+
+
+Every single time in the above steps whenever something is requested, an API is used.
+
+Consider apps and databses etc as locked doors, each door has a robot guard and only the guard can enter and change things in side the room behind the door.
+You (The user) can ask them to take something from the room they are guarding and give it to you, or give the guard something to put inside the room,
+or ask the guard to destroy something inside the room, or change something inside the room.
+
+But the guard has no obligation to accept your requests, it depends on who is asking.
+If you are a normal user the guard (API) will deny some requests, because you are not authorized to make them.
+
+On the other hand people with special permissions (admins) can request anything because they are authorized.
+
+And who authorizes and de-authorizes people?
+
+Well of course it is the person who made that robot guard. Or in technical terms, the backend engineer who made the API (Robot Guard).
+
+
+That is why in Step 1, we processed the request to know if the request can be accepted and is valid. And if it is valid then we convert it into another form of 
+request which the robot guard (API) of the database can understand, we call that form SQL (Structured Query Language).
+
+In Step 2 we send that request to the database to be read and data to be fetched, deleted or changed.
+
+In Step 3 database gives us a response. If data was requested it will respond by sending data, if it was deleted or modified it will respond with a code, like 200 means OK. (Universally)
+
+In Step 4 the backend will convert this response into something the Frontend can understand, and then use it to do stuff on your screen.
+
+
+Well that was how API works. 
+
+
+Next Topic, Memory Management.
+
+
+
+
+
+

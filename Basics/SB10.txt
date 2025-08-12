@@ -1,0 +1,31 @@
+Chapter SB10
+
+Ok let's talk about the last memory section, heap.
+When you think of a heap, I personally think of a heap of haystacks.
+
+And what it is, is exactly that. Heap memory section of a program's total memory in RAM, is the only part which is not static or unmutable.
+Meaning its size can be changed depending on how much memory you want.
+
+I can't really give you an example to represent how it works in code because of two reasons:
+(i) Using heap memory is a high level coding concept in some languages
+(ii) Whereas in some languages you don't even need to know the concept.
+
+I know this all sounds very confusing, so let's think of an analogy.
+
+The heap is a store, a store which sells memory. Your program is a customer, when the customer (program) wants more memory
+because maybe the stack memory section is full, or maybe it prefers to store a certain type of data in the heap, it will ask the
+store (heap) to give it some memory.
+
+But at the end of each program, all the memory is returned back to the RAM. This process is called garbage collection, most languages like Python, Java
+Javascript, do this automatically.
+
+Whereas C/C++ make you (the coder) free memory and give it back to the heap/RAM. If you fail to do so, don't worry nothing bad will happen
+all the memory will still be sent back to the heap/RAM, but here's the thing, in programming its discouraged to take up space in RAM if you don't need it.
+
+Because other programs may need the memory which you don't need, so you should free your unused memory and give it back to the system, so that other
+programs can use it.
+
+Its like opening too many tabs in chrome, you only use one at a time, the others take up memory in RAM, and if you want to run other things like games,
+music apps etc, they might not be able to run because there is not enough space in RAM for them to run.
+
+Well that was all about heap.

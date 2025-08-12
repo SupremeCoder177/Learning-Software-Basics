@@ -1,0 +1,16 @@
+Chapter SB2
+
+This chapter is all about, present day situation about software or should I say, languages.
+Lookt it should be pretty obvious by now that when I say software, I am in fact referring to programming languages and not actual software. You see software is just code and that's what I had in mind naming
+this section software, it should be more like coding, but whatever.
+
+Now let me just get something out of the way before we begin, languages are all the same to some extent, because if you know anything about computers that means you know that computers only work in 
+binary. Well even if you haven't written anything related to code, you should know by watching movies that code is written in English (mostly), huh how can that be? You might ask.
+
+Well in this section there is a folder named COMPILER (See Refrences SB2), I won't go over all the detiails here but consider compilers for now a sort of black-box magic thingy, which can convert english into binary. (Not always)
+
+The reason I say all languages are the same to some extent is because all languages no matter their SYNTAX (See Refrences SB2), result in a binary code which is run by the processor.
+So the syntax might be different but the result is the same, its like saying I can make an app in C++, and then someone else saying, "Hey I can make the same app exactly in Javascript".
+
+Well the difference lies in the compilers, again I can't go into the details here, but here is the concept. Compilers determine how fast a language is, basically when you hear people say Python is slow, C++ is super fast,
+or things like that. They mean that compilers for Python makes it run slow, and the compiler for C++ makes it run fast. (Of course this is oversimplification to the extreme)

@@ -1,0 +1,51 @@
+Chapter SB8
+
+The code memory block as I said before, stored the binary instructions for the CPU to execute.
+But let's define what memory actually is, before we define how CPU reads it.
+
+Memory Cells looks like this, and by the way, the size of a single memory cell is 1 byte or 8 bits.
+
+___________________
+|Data    |Address  |
+|________|_________|
+|10101010|0x1233   |
+|________|_________|
+|01011010|0x1234   |
+|________|_________|
+|00011010|0x1235   |
+|________|_________|
+|10101110|0x1236   |
+|________|_________|
+|01000101|0x1237   |
+|________|_________|
+|10001010|0x1238   |
+|________|_________|
+
+(0x means addresses are in hexadecimal)
+
+In this example when the cpu starts reading instructions, it will start from the first adddress which is 0x1233, then 0x1234 and so on until it reaches the end.
+When it reaches the end the memory will be freed and added back to the RAM.
+
+Since the next part of a memory block, which stores global variables is basically the same thing, but in this case CPU doesn't read that data,
+it just access data from there when required.
+
+Like say
+
+#define PI 3.14  
+
+now PI is a global variable which any line of code can access, whenever the CPU reads an instruction which requires
+using a global variable, it looks in the static/global part of the memory block (See SB7).
+
+Say a function like:
+
+function square(num):
+	return num * num
+
+function calculate_area(radius):
+	area = PI * square(radius)
+	return area
+
+now whenever the function calculate_area will be called, the global variable PI will be refrenced or used. 
+So the CPU will look for its value in the static/global memory section of the memory block.
+
+Next Chapter About Stack Section of Memory Block

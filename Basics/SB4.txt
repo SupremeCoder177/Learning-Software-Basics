@@ -1,0 +1,35 @@
+Chapter SB4
+
+Different types of softwares.
+
+Well to be honest, at the very core of this field, its just coding. Nothing too different, but what we code is what differs.
+Softwares like games and apps though may take the same coding skills, take very different other skills to make.
+
+For example, making an app rerquires 2 things. To make the UI (User Interface) and the backend. Now what do these two things mean? Well the UI is the thing
+that the user sees when they open the app, like opening the wheather app, you see the wheather, some animations, and images and whatnot, designing the look of the app is the job of the
+FrontEnd Developer, the backend on the other hand is the thing which supplies data to the app.
+
+Like in the weather app, where do you think the temperature and the weather forecast comes from? Well from internet access of course, but from where does your internet access the data?
+The data is stored in things called servers, I am sure you have heard of them before. If you haven't let me give you a bit of intro. A server is like a computer but with very large storage, and I am talking extremely 
+large, not in terabytes, but the most smallest servers today have like at least a couple dozen petabyte of storage, for comparison, 1 petabyte (Pb) = 1024 terabyte (Tb), and 1 terabyte (Tb) = 1024 gigabyte (Gb)
+
+And what do these super large computers do with all this storage? They store data obviously. To access the data in this large storage we connect to the internet and send a request to the server, 
+in this example we need the weather data, so we send a request to the server which holds the data, using our internet connection. The server recieves the request and sends back the data we need to us. And then your
+app uses this data to display information on your screen. The code that handles sending and recieving requests is called the backend of the app. Making this backend is called
+Backend Development. To make an app you need to know both, people who can make both the UI and backend are called Full Stack Engineers.
+
+This was all about making an app. But what about games?
+
+Games like way more complex and time consuming to make than apps, for the sole reason you need a variety of skills to make a good game.
+For example, if you are making a 3D game, you need your graphics, voice actors, coding (ofc). And if you aren't using a game engine then you have to make your own game engine.
+
+Personally speaking, I have made a lot of small 2D games, and a lot of apps. Making the tileset, desining the characters, coding the physics and making clean animations is what I need to make 
+those games, but for apps all I need is a library with built-in widgets.
+
+(Now if you didn't understand anything I said don't worry, it ain't that important)
+
+The point is that, though at the heart of all software its just code, softwares differ in their function and the skills required to make different softwares divide
+the coding field into various jobs like Game Developers, Web Developers etc.
+
+SO think of it like this, all programmers are given the same tools, what they use to build these tools is different.
+
