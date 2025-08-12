@@ -1,0 +1,51 @@
+Chapter SCo5
+
+So you wanna learn about functions, well its about damn time.
+
+So what is a function?
+Let me answer this with an example (like always), you know how factories work right?
+
+Well if you don't then let me give you a rundown, a factory is a place where things are made. 
+Like for example, pencils are made in a factory, cars are made in a factory.
+Basically a factory is a place where you make things.
+
+But wait, how do you make things? I mean I can make a paper plane out of a paper, but to make that paper plane I need something,
+which is two things:
+(i) A paper
+(ii) Knowing how to make a paper plane
+
+So factories must also need something to use, and then know how to convert whatever they use into products.
+These things that they use are called, raw materials. And knowing in this case is processing these raw materials into something.
+
+A function in programming is exactly like that, with a few disimilarities.
+
+A function is a block of code which gets executed when it is called. How do you 'call' a function?
+Simple, like this. function_name + () = function_name()
+
+Why the parenthesis?
+
+Well because that is where we enter the arguments (raw materials) for the function to use (process), sometimes we don't need to enter anything
+because the function doesn't need anything.
+
+Like:
+function add(a, b){
+	return a + b
+}
+
+'add' is the name of the function here.
+{ marks the start of the function and } marks the end
+return is the thing a function returns (like the product a factory makes)
+
+So in this example, a function named add takes in two things, a and b, adds them and returns them.
+
+In this case: a, b = raw materials
+	      a + b = process
+	return a + b = product
+
+Now not all functions require raw materials, or as we call them in programming terms "arguments". 
+And not all functions return something.
+
+But nevertheless all functions do something, which is why you call them.
+Well that was all about functions.
+
+Next chapter Recursion and why I hate it.

@@ -1,0 +1,29 @@
+Chapter SCo3
+
+Loops are statements in coding which excecute continously until a certain condition is met
+Like for example
+
+i = 0
+while i < 10:
+	print("Hello there)
+	i = i + 1 (or i += 1)
+
+Here the statement "Hello There" is going to be printed to the console 10 times because the statemtent is going
+to execute while i < 10, and i = 0 at the start and is incremented by 1 in each cycle 
+
+Of course you can do math with this as well
+you can do stuff like
+
+a = 10
+b = cos(10)
+c = sin(a + b) / tan(pi / a)
+print(c)
+
+And there you have it, this is all of coding, complete.
+
+But I know what you are thinking but this can't be, coding is supposed to be complicated and really boring, this is too easy.
+There is literally 3 things you can do, make conditions, loops and do math. Is that all?
+
+How in the hell are we able to make things like realistic games etc with just this?
+Well this is where coding gets interesting and we need to dive deep into history of computers to understand this.
+

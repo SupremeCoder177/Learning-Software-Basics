@@ -1,0 +1,50 @@
+Chapter SCo4
+
+Now to bridge the gap between using logic gates to do math, using capacitors to store electrons which represented data
+to displaying things on a screen, was a very giant leap, but in terms of complexity not so much on the surface, but a lot if you dig deep.
+
+
+Everything Begins At Something Called a FrameBuffer.
+
+Imagine a grid of pixels, each pixel has a number assigned to it according to its location.
+Like the pixel in the top left region of the grid has the numbers, row = 0, column = 0 or [0, 0] 
+assigned to it.
+
+Now take such a grid of dimensions say 100x100 which gives you 10000 pixels, or 10000 unique positions.
+
+Now allocate some space in the RAM (random access memory) of your computer, how much you ask? Exactly 10000 bits.
+Which is more or less just 1.22kb of data, which is in today's standards, close to nothing.
+
+Each bit in that memory block corresponds to a pixel on the grid.
+
+Now begin reading the data from the first memory address (see SB7) till the end of the data block,
+and if there is a 1 stored in the data slot, print on the screen say a '#' and if nothing is present in data slot,
+or if 0 is stored, then print a ' ', and viola you have learned how to draw things on screen using simple coding logic.
+
+Looping over something, reading data and printing to console are simple concepts and from that now you can 
+draw things on screen.
+
+The memory block we used to store the value of each pixel is called a FrameBuffer, and even though in this particular example
+we used printing to console, to draw things. This is not how the first framebuffers were used.
+
+When the first display screen for a computer was made, it was a CRT firing electrons on a phosphor sheet, phosphorus has a property called
+cathodeluminescence, which means it emits light when hit by electrons, as to how we made an electron gun, bro please I am not that smart.
+
+Anyways a machine read data from RAM and converted it to voltages using an DAC (Digital-to-analog) converter, and on the basis of that
+voltage the electron gun was fired, and the appropriate light was produced on the screen.
+
+Modern displays work on the same principle, they still uses FrameBuffers, the only thing that is changed is that,
+in the example we represent 1 pixel with 1 bit of data, which gave us a black and white display.
+
+But for color display we store each pixel data in 32bits, 8 bits for red, 8 bit for green, 8 bits for blue and 8 bits for intensity or opaqueness.
+
+As for the term refresh rate, it means how many times in a single second the CPU reads the framebuffer and draws things.
+Like a refesh rate of 60hertz means it reads the framebuffer 60 times in a single second.
+
+Of course the actual mathematics and engineering regarding making this all possible is very complex, this is why no single person accomplished this, this was done
+over many years by the collaboration of many smart people and a lot of other people helping them.
+
+But that was all about hardware aspect of how displaying things on a screen work.
+Next let's talk more about coding stuff.
+
+Next chapter about Functions.

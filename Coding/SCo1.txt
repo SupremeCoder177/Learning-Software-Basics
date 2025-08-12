@@ -1,0 +1,14 @@
+Chapter SCo1
+
+Well it is finally the time for which you might have begun to read this series.
+
+Coding, no more jokes, just pure technical knowledge impartment from now on.
+
+A program is a basically a text file with a bunch of instrcution which the CPU can read and execute, and the process of making these files is called coding.
+Now since the reason why the instructor matters very much in the success of an athelete, the same is the case here. Coding is done using tools to instruct the 
+computer to do certain things. How well you can make it to do it, depends on the one using the tools.
+
+Tools in this sense are the rules or the syntax of the language being used to make the program. Just like how in languages grammer matters, in coding, syntax matters.
+The CPU only understand a proper syntax there is no expection for any kind of errors, and there are many ways to do the same task, some take more time than the others,
+while others don't. It is all about optimizing programs for the best possible result.
+

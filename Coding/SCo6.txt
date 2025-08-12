@@ -1,0 +1,58 @@
+Chapter SCo6
+
+Recusion in simple terms, is when a function calls itself during its process.
+Now as confusing as that sounds, it really happens.
+
+Like an exmaple will be something like this:
+
+function raise(number, power):
+	if power is 1:
+		return number
+	else:
+		return number * raise(number, power - 1)
+
+Now in this case we describe a function which takes in two inputs, both are integers.
+The first input "number" is the one which doesn't change.
+Whereas the second input "power" changes for each step of recusrion.
+
+Let's see a real case of us using this function, so let's call this function with the following inputs: 2 and 3
+
+print_to_console raise(2, 3)  This will print the result to console (Not really this is just sudo code, see SCo6 refrences)
+
+1st Layer
+First Line:
+	if power is 1, power = 3, therefore false
+Next Line
+	else, return number * raise(number, power - 1) = return 2 * raise(2, 2)
+
+
+2nd Layer
+First Line:
+	if power is 1, power = 2, therefore false
+Next Line:
+	else, return number * raise(number, power  -1) = return 2 * raise(2, 1)
+
+3rd Layer
+First Line:
+	if power is 1, power = 1, therefore true:
+		return number = return 2
+
+Jump to second layer
+return 2 * raise(2, 1) = return 2 * 2 = 4
+
+Jump to first layer
+return 2 * raise(2, 2) = return 2 * 4 = 8
+
+So we get the result of raise(2, 3) = 8 and print this to the console.
+
+This is how recusion works, but of course as simple as it looks, it is very powerful for things like sorting algorithms (See SCo6 refrence notes).
+But each time we go 1 layer deeper with calling the function itself, we take up more and more of the stack memory (See SB9) and 
+beyond a certain number of layers this will result in a StackOverflow Error.
+
+Like if we try to do something like 
+raise(2, 10000000) this will create 10000000 layers, or will consume 10000000 stack-frames, and if the RAM of a particular device is not so big
+to accommodate all those stack-frames, an error will occur and the program will terminate. 
+
+So even though it is a very powerful tool, "with power comes responsibility".
+
+Well enough corny lines, see you in next chapter about data types.

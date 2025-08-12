@@ -1,0 +1,44 @@
+Chapter SCo7 
+
+Data types, finally a chapter I have been dying to write about.
+So far I have been using things like
+a = 10
+b = something other number
+
+and so on....
+
+But you see in programming, we have a name for each type of data we can store in a variable.
+Those Names Are as follows
+
+int or integers, float/double or real numbers, string or words, char or single characters, bool/boolean or true/false
+
+Basically every single variable which holds data, and doesn't refrence a function 
+have one of these kind of data. Most languages we declare variables like so:
+
+int a = 10   This tells the compiler that the variable named 'a' can only store integer values
+float b = 1.0234    This tells the compiler that the variable named 'b' can only real number values
+string c = "Hello There"    This tells the compiler that the variable named 'c' can only store words
+char d = 'z'   This tells the compiler that the variable named 'd' can only store single characters
+bool e = true    This tells the compiler that the variable named 'e' can only store true or false.
+
+
+Each data type is kind of related to one another, because at the end of the day everything is just stored in binary,
+and binary is converted to decimal numbers. So at the most basic level, all type of data can be converted into numbers.
+
+But to be able to store things like words or characters we humans decided to come up with some rules, 
+that is to say some numbers would represent letters, and when we combine numbers, it would be the same as combining letters
+to form words.
+
+Like A = 1, a = 2, B = 3, b = 3 and so on (note this is only for example)
+
+This system of assigning numbers to letters of the English Alphabet and other non-numeric keys on your keyboard was
+called the ASCII system, which stands for "American System of something something"
+
+But it only covered the english language and only a few symbols, but there are so many languages out there and so many
+symbols, so to cover all of those we user utf-8 system today.
+
+utf-8 is an encoding system which covers almost all languages and symbols.
+
+And this is why I said all data types are linked to each other, but ti doesn't mean that they are the same.
+
+Ok that's enough about data types, next about parallel execution.

@@ -1,0 +1,14 @@
+Chapter SCo2
+
+Conditions are statements in coding which are evaluated as true or false.
+
+Like for example
+age = 10
+if age >= 18: 
+	allow entry in club
+else:
+	kick them out
+
+Of course this is not the proper syntax but this is just an example, but this example applies to all types of languages.
+
+Next chapter Loops
